@@ -8,24 +8,122 @@
 </head>
 
 <body>
-    <h1>Hi, Je suis Thomas, Graphiste</h1>
+    <header>
+        <p>BeThom</p>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#blog">Blog</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <p>Passionné par le code et le design, j'aide les entreprises et les créateurs à développer des sites modernes,
-        performants et adaptés à leurs besoins. Mon objectif est de transformer vos idées en expériences numériques
-        fluides et efficaces.</p>
+    <main>
+        <section id="accueil">
+            <h1>Hi, Je suis Thomas, Graphiste</h1>
+            <p>Passionné par le code et le design, j'aide les entreprises et les créateurs à développer des sites
+                modernes, performants et adaptés à leurs besoins. Mon objectif est de transformer vos idées en
+                expériences numériques fluides et efficaces.</p>
+            <a href="cv-thomas.pdf">Télécharger mon CV</a>
+            <img src="images/thomas.png" alt="Portrait de Thomas, graphiste freelance">
+        </section>
 
-    <a href="cv-thomas.pdf">Télécharger mon CV</a>
-    <img src="images/thomas.png" alt="Portrait de Thomas, graphiste freelance">
-    <h2>Articles récents</h2>
-<h3>Créer un design system à partir de zéro</h3>
-<h3>Créer des icônes pixel perfect dans Figma</h3>
+        <section id="blog">
+            <h2>Articles récents</h2>
 
-<h2>Travaux en vedette</h2>
-<h3>Design de tableaux de bord</h3>
-<h3>Portraits vibrants de 2020</h3>
-<h3>36 jours de typographie</h3>
+            <article>
+                <h3>Créer un design system à partir de zéro</h3>
+                <p>12 Feb 2020 | Design, Pattern</p>
+                <p>Dans cet article, je partage mon approche pour mettre en place un design system clair et efficace,
+                    afin de garantir la cohérence visuelle d'un projet digital.</p>
+            </article>
 
-<h2>Me contacter</h2>
+            <article>
+                <h3>Créer des icônes pixel perfect dans Figma</h3>
+                <p>12 Feb 2020 | Figma, Icon Design</p>
+                <p>Découvrez mes techniques pour concevoir des icônes nettes et précises dans Figma, adaptées aussi bien
+                    au web qu'aux applications mobiles.</p>
+            </article>
+        </section>
+
+        <section id="portfolio">
+            <h2>Travaux en vedette</h2>
+
+            <article>
+                <img src="images/dashboard.png" alt="Interface d'un tableau de bord avec graphiques et menu latéral">
+                <h3>Design de tableaux de bord</h3>
+                <p>2020 | Dashboard</p>
+                <p>Un projet de conception d'interface utilisateur pour une plateforme de gestion. L'objectif était de
+                    proposer un tableau de bord intuitif et esthétique.</p>
+            </article>
+
+            <article>
+                <img src="images/portraits.png"
+                    alt="Illustration numérique d'une femme aux cheveux violets avec une fleur jaune">
+                <h3>Portraits vibrants de 2020</h3>
+                <p>2018 | Illustration</p>
+                <p>Série d'illustrations numériques réalisées avec une palette de couleurs audacieuses, explorant
+                    l'identité et l'émotion à travers le portrait.</p>
+            </article>
+
+            <article>
+                <img src="images/typographie.png" alt="Lettre calligraphiée beige sur fond sombre">
+                <h3>36 jours de typographie</h3>
+                <p>2018 | Typography</p>
+                <p>Un projet créatif consistant à explorer et styliser les caractères de la typographie malayalam à
+                    travers une série de visuels graphiques.</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Me contacter</h2>
+
+            <h3>Parlons-en</h3>
+            <p>Vous avez une grande idée ou un projet à développer et besoin d'aide ? Contactez-moi, je serai ravi
+                d'échanger avec vous et de vous accompagner.</p>
+
+            <h3>Email</h3>
+            <p>beebs@gmail.com</p>
+
+            <h3>Socials</h3>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+
+            <form>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <label for="service">Quel service vous intéresse</label>
+                <select id="service" name="service">
+                    <option value="">Select project type</option>
+                    <option value="identite">Identité visuelle</option>
+                    <option value="ui">UI design</option>
+                    <option value="illustration">Illustration</option>
+                </select>
+
+                <label for="budget">Budget</label>
+                <select id="budget" name="budget">
+                    <option value="">Select project budget</option>
+                    <option value="petit">Moins de 1 000 €</option>
+                    <option value="moyen">1 000 à 5 000 €</option>
+                    <option value="grand">Plus de 5 000 €</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright ©2020 All rights reserved</p>
+    </footer>
 </body>
 
 </html>
