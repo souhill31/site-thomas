@@ -88,3 +88,91 @@ p {
 #blog h2 {
     width: 100%;
 }
+#portfolio article {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    padding: 40px 0;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+#portfolio img {
+    width: 260px;
+    border-radius: 8px;
+}
+.annee {
+    background-color: #1E2A4A;
+    color: white;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+#contact h2 {
+    width: 100%;
+}
+
+#contact div {
+    flex: 1;
+}
+
+#contact form {
+    flex: 2;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    padding: 14px;
+    border: none;
+    background-color: #F5F5F5;
+    font-family: inherit;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    margin-top: 30px;
+    padding: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-family: inherit;
+}
+#contact div a {
+    display: block;
+    margin-bottom: 12px;
+    text-decoration: underline;
+}
+footer {
+    padding: 40px 120px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+footer img {
+    width: 28px;
+}
