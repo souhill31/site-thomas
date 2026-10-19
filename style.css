@@ -16,6 +16,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 120px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
 }
 nav {
     display: flex;
@@ -37,11 +41,28 @@ section {
     justify-content: space-between;
     align-items: center;
 }
+.photo {
+    position: relative;
+}
+
+.photo::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    background-color: #EAF6F8;
+    border-radius: 50%;
+    top: 20px;
+    left: -20px;
+    z-index: -1;
+}
+
 #accueil img {
-    width: 280px;
-    height: 280px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
     object-fit: cover;
+    display: block;
 }
 #accueil div {
     max-width: 600px;
@@ -85,8 +106,15 @@ p {
     gap: 40px;
     flex-wrap: wrap;
 }
-#blog h2 {
+.titre-ligne {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titre-ligne a {
+    color: #4DD0E1;
 }
 #portfolio article {
     display: flex;
