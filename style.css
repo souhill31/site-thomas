@@ -60,6 +60,7 @@ section {
 #accueil img {
     width: 320px;
     height: 320px;
+    min-width: 320px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
@@ -203,4 +204,127 @@ footer div {
 
 footer img {
     width: 28px;
+}
+.burger {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    header,
+    section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    #accueil img,
+    .photo::before {
+        width: 240px;
+        height: 240px;
+        min-width: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    #accueil {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    #accueil img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .photo::before {
+        width: 200px;
+        height: 200px;
+        top: 20px;
+        left: -20px;
+    }
+        #blog article {
+        flex: none;
+        width: 100%;
+    }
+
+    #portfolio article {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #portfolio img {
+        width: 100%;
+    }
+        #blog {
+        gap: 20px;
+    }
+
+    .titre-ligne {
+        margin-bottom: 0;
+    }
+        #contact {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #contact div,
+    #contact form {
+        flex: none;
+        width: 100%;
+    }
+
+    footer {
+        padding: 40px 20px;
+    }
+        #contact div {
+        display: none;
+    }
+        header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        width: 28px;
+    }
+        #blog article {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+        .titre-ligne {
+        justify-content: center;
+    }
+
+    .titre-ligne a {
+        display: none;
+    }
 }
